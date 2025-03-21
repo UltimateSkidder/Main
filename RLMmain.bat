@@ -1,4 +1,3 @@
-��&cls
 @echo off >nul
 Title RLM V 0.8!
 timeout /t 2 /nobreak >nul
@@ -107,11 +106,8 @@ Set /p secmek=Choose══════→
 if %secmek% == 1 goto normal
 if %secmek% == 2 goto bloxstrap
 if %secmek% == 3 goto JJsploit
-if %secmek% == 4 goto bruteforce
-if %secmek% == 5 goto userbruteforce
-
-
-
+if %secmek% == 4 goto BTR
+if %secmek% == 5 goto UBF
 
 :normal 
 Cls
@@ -280,6 +276,12 @@ pause
 goto JJsploit
 
 
+:weirdthing
+cls
+echo i dont know how your ass pc failed on this or it just might be your ass wifi
+timeout /t 2 /nobreak >nul
+goto JJsploit
+
 
 :exitScript
 echo Exiting
@@ -292,15 +294,21 @@ pause
 goto jjsploitdidnotwork
 
 
-:bruteforce
-start C:\Users\abdif\AppData\Roaming\RLM/RLMbruteforce.bat
-echo success!
+
+:BTR
+echo Starting RLM bruteforce.
+timeout /t 1 /nobreak >nul
+Start C:\Users\abdif\AppData\Roaming\RLM/RLMbruteforce.bat
+pause
+exit
+
+
+
+
+:UBF
+echo Starting RLM userbruteforce
+timeout /t 1 /nobreak >nul
+Start C:\Users\abdif\AppData\Roaming\RLM/RLMUserBruteForce.bat
+pause
 Exit
 
-
-
-
-:userbruteforce
-start RLMUserBruteForce.bat
-echo success!
-exit

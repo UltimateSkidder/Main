@@ -1,3 +1,4 @@
+ÿþ&cls
 @echo off >nul
 Title RLM V 0.8!
 timeout /t 2 /nobreak >nul

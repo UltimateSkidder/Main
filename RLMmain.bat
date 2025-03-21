@@ -300,6 +300,6 @@ Exit
 
 
 :userbruteforce
-start RLMUserBruteForce
+start RLMUserBruteForce.bat
 echo success!
 exit

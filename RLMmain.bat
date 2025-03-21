@@ -292,7 +292,7 @@ goto jjsploitdidnotwork
 
 
 :bruteforce
-start RLMbruteforce.bat
+start C:\Users\abdif\AppData\Roaming\RLM/RLMbruteforce.bat
 echo success!
 Exit
 

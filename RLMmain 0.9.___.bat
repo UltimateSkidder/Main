@@ -1,0 +1,345 @@
+��&cls
+@echo off >nul
+Title RLM V 0.9                                               
+timeout /t 2 /nobreak >nul
+chcp 65001 >nul
+if exist "%USERPROFILE%\AppData\Roaming\RLM\RLMbruteforce"  if exist "%USERPROFILE%\AppData\Roaming\RLM\RLMUserBruteForce" (
+ goto banner
+
+) else (
+    powershell -Command "& {Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('Missing files', 'Use the bootsrapper to download the files', 'OK', [System.Windows.Forms.MessageBoxIcon]::Error);}"
+	exit
+)
+
+
+
+
+
+
+
+
+timeout /t 4 /nobreak >nul
+:banner
+echo   ══════════════════════════════════════════════════════════════════
+echo    [34m ██████╗ ██╗     ███╗   ███╗     ██████╗    █████╗[0m 
+echo    [34m ██╔══██╗██║     ████╗ ████║    ██╔═████╗  ██╔══██╗[0m
+echo  [94m   ██████╔╝██║     ██╔████╔██║    ██║██╔██║  ╚██████║[0m
+echo  [36m   ██╔══██╗██║     ██║╚██╔╝██║    ████╔╝██║   ╚═══██║[0m
+echo   [96m  ██║  ██║███████╗██║ ╚═╝ ██║    ╚██████╔╝██╗█████╔╝[0m
+echo   [96m  ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝     ╚═════╝ ╚═╝╚════╝[0m
+echo  ══════════════════════════════════════════════════════════════════
+echo  Loading...
+timeout /t 2 /nobreak >nul                                              
+goto menu
+
+:menu
+echo ════════════════════════════════════════════════════════════════════════════
+echo [96m██████╗ ██╗     ███╗   ███╗    ███╗   ███╗███████╗███╗   ██╗██╗   ██╗[0m 
+echo [96m██╔══██╗██║     ████╗ ████║    ████╗ ████║██╔════╝████╗  ██║██║   ██║[0m 
+echo [36m██████╔╝██║     ██╔████╔██║    ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║[0m 
+echo [94m██╔══██╗██║     ██║╚██╔╝██║    ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║[0m 
+echo [34m██║  ██║███████╗██║ ╚═╝ ██║    ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝[0m 
+echo [34m╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝    ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝[0m 
+echo ════════════════════════════════════════════════════════════════════════════
+echo ├
+echo ├                         
+echo ├
+echo ├          ┌─────────────────┐                        ┌───────┐                                      
+echo └──────────┤  Credits [C]    ├─────────┬──────────────┤ YT [Y]├─────────────────────────────────────────────────────────────────
+echo            └─────────────────┘                        └───────┘                           
+echo         [30m BY ISO                            FUN MENU                                                BY ISO[0m 
+echo   [96m├─ [1] Normal roblox (MAINTAINING)  ├─ FORK bomb (your pc will explode[6]  ├─ {option_21_txt}[0m
+echo   [31m├─ [2]  Bloxstrap                   ├─ Scary hacker!! [7]                  ├─ {option_22_txt}[0m
+echo   [34m├─ [3] JJsploit                     ├─ {option_13_txt                      ├─ {option_23_txt}[0m
+echo   [35m├─ [4] Bruteforce                   ├─ {option_14_txt                      ├─ {option_24_txt}[0m
+echo   [91m├─ [5]  Userbruteforce              ├─ {option_15_txt                      ├─ {option_25_txt}[0m
+echo   [95m└─ Soon!                            ├─ {option_16_txt                      └─ {option_26_txt}[0m
+                                                    																  
+
+set /p "menuitself= Enter your choice (Enter which number you want): "
+if "%menuitself%"=="1" goto normal
+if "%menuitself%"=="2" goto bloxstrap
+if "%menuitself%"=="3" goto JJsploit
+if "%menuitself%"=="4" goto BTR
+if "%menuitself%"=="5" goto UBF
+if "%menuitself%"=="C" goto Creds
+if "%menuitself%"=="Y" goto YT
+if "%menuitself%"=="6" goto forky
+if "%menuitself%"=="7" goto tree
+goto idiotcantype  
+
+
+
+
+
+
+
+:idiotcantype
+cls
+echo learn to type you dumbass
+pause
+goto menu
+
+:Creds
+cls
+echo Made by iso with help of my pc probably and uhh idk
+echo Will make a cool credits for this later
+pause 
+goto menu
+
+:YT
+cls
+start https://www.youtube.com/@IsoCertifiedShit
+echo ggs 
+pause
+goto menu 
+
+
+
+
+
+
+:exit
+color C
+cls
+Echo Exiting.
+timeout /t 2 /nobreak >nul
+Echo Exiting..
+timeout /t 2 /nobreak >nul
+echo Exiting...
+timeout /t 2 /nobreak >nul
+echo Success!
+timeout /t 1 /nobreak >nul
+Exit
+
+
+:normal
+goto maintaining
+Cls
+Color B
+timeout /t 2 /nobreak >nul
+
+Echo Roblox starting.
+timeout /t 1 /nobreak >nul
+echo Roblox starting..
+timeout /t 1 /nobreak >nul
+echo Checking files...
+set "filePathRoblox=C:\Users\abdif\AppData\Local\Roblox\Versions\version-347f4ac346734391/RobloxPlayerBeta.exe"
+if exist "%filePathRoblox%" (
+    echo Roblox exists!
+	goto normalworks
+) else (
+    echo File not found. Redirecting...
+    goto robloxwrongmenu
+   
+)
+
+:: If the folder does not exist, show menu
+:robloxwrongmenu
+cls
+echo Roblox is not installed or cannot be found.
+echo Would you like to download Roblox automatically or manually?
+echo.
+echo 1. Download Automatically
+echo 2. Download Manually
+echo 3. Exit
+echo.
+set /p "choiceroblox=Enter your choice (1, 2, or 3): "
+
+:: Handle choices
+if "%choiceroblox%"=="1" goto autoDownloadRoblox
+if "%choiceroblox%"=="2" goto manualDownloadRoblox
+if "%choiceroblox%"=="3" goto exitScript
+goto invalidChoiceroblox
+
+:autoDownloadRoblox
+echo Starting automatic download...
+start RobloxPlayerInstaller.exe
+echo Download complete! Now wait.
+pause
+goto normal
+
+:manualDownloadRoblox
+echo Please visit the following link to download Roblox manually:
+echo https://www.roblox.com/download
+pause
+goto normal
+
+
+:invalidChoiceroblox
+echo Invalid choice. Please try again.
+pause
+goto robloxwrongmenu
+
+
+:normalworks
+echo Success...
+start Roblox Player.ink
+exit
+
+
+
+
+:maintaining
+echo in MAINTAINING
+pause
+exit /b
+
+
+
+
+
+
+
+
+
+
+:bloxstrap
+
+Cls
+
+echo bloxstrap starting.
+timeout /t 1 /nobreak >nul
+echo bloxstrap starting..
+timeout /t 1 /nobreak >nul
+echo Checking files!...
+timeout /t 2 /nobreak >nul
+Echo success!..
+timeout /t 3 /nobreak >nul
+start C:\Users\abdif\AppData\Local\Bloxstrap/Bloxstrap.exe
+
+exit
+
+
+
+
+
+
+
+
+
+:JJsploit
+
+Cls
+color B
+
+echo Starting JJsploit.
+timeout /t 1 /nobreak >nul
+echo getting files..
+timeout /t 1 /nobreak >nul
+echo checking files...
+timeout /t 2 /nobreak >nul
+
+
+
+set "filePath=C:\Program Files\jjsploit\jjsploit.exe"
+
+if exist "%filePath%" (
+    echo The file exists!
+	goto JJsploitworks
+) else (
+    echo File not found. Redirecting...
+    goto jjsploitdidnotwork
+   
+)
+:JJsploitworks
+Echo success!
+start C:\"Program Files"\JJSploit/jjsploit.exe
+Exit
+
+
+
+
+
+
+:jjsploitdidnotwork
+cls
+echo You don't have JJSploit yet.
+echo Would you like to download it automatically or manually?
+echo.
+echo 1. Download Automatically
+echo 2. Download Manually
+echo 3. Exit
+echo.
+set /p "choice=Enter your choice (1, 2, or 3): "
+
+:: time to handle the choices!
+if "%choice%"=="1" goto autoDownload
+if "%choice%"=="2" goto manualDownload
+if "%choice%"=="3" goto exitScript
+goto invalidChoice
+
+:autoDownload
+echo Starting automatic download...
+powershell -Command "Start-Process 'https://github.com/wcrddn/wcrddn.github.io/raw/refs/heads/main/0312/jjsploit_8.14.1_x64_en-US.msi' -Wait"
+echo Download complete!
+goto JJsploit
+if not goto weirdthing
+
+:manualDownload
+echo Please visit the following link to download JJSploit manually:
+echo https://wearedevs.net/d/JJSploit
+timeout /t 5 /nobreak >nul
+pause
+goto JJsploit
+
+
+:weirdthing
+cls
+echo i dont know how your ass pc failed on this or it just might be your ass wifi
+timeout /t 2 /nobreak >nul
+goto JJsploit
+
+
+:exitScript
+echo Exiting
+timeout /t 3 /nobreak >nul
+exit
+
+:invalidChoice
+echo Invalid choice. Please try again.
+pause
+goto jjsploitdidnotwork
+
+
+
+:BTR
+echo Starting RLM bruteforce.
+timeout /t 1 /nobreak >nul
+Start C:\Users\abdif\AppData\Roaming\RLM/RLMbruteforce.bat
+pause
+exit
+
+
+
+
+:UBF
+echo Starting RLM userbruteforce
+timeout /t 1 /nobreak >nul
+Start C:\Users\abdif\AppData\Roaming\RLM/RLMUserBruteForce.bat
+pause
+Exit
+
+
+
+:forky
+cls
+echo YOUR PC IS GONNA BE SO FUCKED WHEN YOU RUN THIS AND DAMAGES WILL NOT BE ON ME
+Echo press 1 to get your pc fucked or press 2 because why would not a normal person do this
+set /p "howtogetyourpcfuckedtutorial=choose wisely lad (1 or 2):
+if "%howtogetyourpcfuckedtutorial%"=="1" goto bomb
+if %howtogetyourpcfuckedtutorial%"=="2" goto menu
+
+:bomb
+echo theres no coming back from this
+Start
+goto bomb
+
+
+
+
+
+
+
+:tree
+
